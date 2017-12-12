@@ -12,14 +12,14 @@ python36 -m pip install pandas scipy sklearn matplotlib keras tensorflow-gpu h5p
 
 wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.106/NVIDIA-Linux-x86_64-367.106.run
 
-sudo /bin/bash ./NVIDIA-Linux-x86_64-367.106.run -a -s
+/bin/bash ./NVIDIA-Linux-x86_64-367.106.run -a -s
 
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
 
-sudo sh cuda_8.0.61_375.26_linux-run --silent --toolkit
+sh cuda_8.0.61_375.26_linux-run --silent --toolkit
 
 cd /usr/local \
-    && sudo tar xvzf ~/cudnn-8.0-linux-x64-v6.0.tgz \
+    && tar xvzf ~/cudnn-8.0-linux-x64-v6.0.tgz \
     && cd -
 
 export PATH="$PATH:/usr/local/cuda/bin"
